@@ -1,0 +1,13 @@
+name: aws-rds-microsoft-sql-server-2017-cis-baseline
+title: aws-rds-microsoft-sql-server-2017-cis-baseline
+maintainer: MITRE SAF
+copyright: MITRE SAF
+copyright_email: saf@groups.mitre.org
+license: Apache-2.0
+summary: "An InSpec Profile to validate the AWS RDS Microsoft SQL Server 2017 CIS Benchmark"
+version: 1.2.0
+inspec_version: ">= 4.0"
+
+depends:
+- name: microsoft-sql-server-2017-cis-baseline
+  url: https://github.com/mitre/microsoft-sql-server-2017-cis-baseline/archive/v1.2.0.tar.gz
