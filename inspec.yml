@@ -11,3 +11,31 @@ inspec_version: ">= 4.0"
 depends:
 - name: microsoft-sql-server-2017-cis-baseline
   url: https://github.com/mitre/microsoft-sql-server-2017-cis-baseline/archive/v1.2.0.tar.gz
+
+inputs:
+  - name: user
+    description: 'The username MSSQL DB Server'
+    required: true
+    sensitive: true
+
+  - name: password
+    description: 'The password MSSQL DB Server'
+    required: true
+    sensitive: true
+
+  - name: host
+    description: 'The hostname MSSQL DB Server'
+    required: true
+    sensitive: true
+
+  - name: instance
+    description: 'The instance name MSSQL DB Server'
+    required: true
+    sensitive: true
+
+  - name: port
+    description: 'The port used for MSSQL DB Server'
+    type: numeric
+    value: 1433
+    required: true
+    sensitive: true
