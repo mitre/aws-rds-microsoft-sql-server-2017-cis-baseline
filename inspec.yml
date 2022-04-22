@@ -17,21 +17,25 @@ inputs:
     description: 'The username MSSQL DB Server'
     required: true
     sensitive: true
+    profile: microsoft-sql-server-2017-cis-baseline
 
   - name: password
     description: 'The password MSSQL DB Server'
     required: true
     sensitive: true
+    profile: microsoft-sql-server-2017-cis-baseline
 
   - name: host
     description: 'The hostname MSSQL DB Server'
     required: true
     sensitive: true
+    profile: microsoft-sql-server-2017-cis-baseline
 
   - name: instance
     description: 'The instance name MSSQL DB Server'
     required: true
     sensitive: true
+    profile: microsoft-sql-server-2017-cis-baseline
 
   - name: port
     description: 'The port used for MSSQL DB Server'
@@ -39,3 +43,4 @@ inputs:
     value: 1433
     required: true
     sensitive: true
+    profile: microsoft-sql-server-2017-cis-baseline
