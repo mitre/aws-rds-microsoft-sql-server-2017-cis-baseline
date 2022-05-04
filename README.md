@@ -93,7 +93,7 @@ The JSON InSpec results file may also be loaded into a __[full heimdall server](
 * Will Dower - [wdower](https://github.com/wdower)
 
 ## Contributing and Getting Help
-To report a bug or feature request, please open an [issue](https://github.com/mitre/oracle-mysql-ee-5.7-cis-baseline/issues/new).
+To report a bug or feature request, please open an [issue](https://github.com/mitre/aws-rds-microsoft-sql-server-2017-cis-baseline/issues/new).
 
 ### NOTICE
 
