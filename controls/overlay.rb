@@ -1,6 +1,7 @@
 # encoding: utf-8
 
 include_controls "microsoft-sql-server-2017-cis-baseline" do
+  
   control "microsoft-sql-server-2017-cis-2.9" do
     impact 0.0
     describe 'According to this CIS benchmark, this requirement is not applicable to AWS RDS instances of this type of database.' do
@@ -49,4 +50,5 @@ include_controls "microsoft-sql-server-2017-cis-baseline" do
       skip 'According to this CIS benchmark, this requirement is not applicable to AWS RDS instances of this type of database.'
     end
   end
+
 end

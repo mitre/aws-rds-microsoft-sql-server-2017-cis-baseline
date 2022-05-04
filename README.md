@@ -47,7 +47,7 @@ encryption_disabled_dbs: []
 
 ```
 # How to run
-inspec exec https://github.com/mitre/aws-rds-microsoft-sql-server-2017-cis-baseline/archive/master.tar.gz -t winrm://<hostip> --user=<admin-account> --password=<password> --input-file=<path_to_your_inputs_file/name_of_your_inputs_file.yml> --reporter=cli json:<path_to_your_output_file/name_of_your_output_file.json>
+inspec exec https://github.com/mitre/aws-rds-microsoft-sql-server-2017-cis-baseline/archive/master.tar.gz --input-file=<path_to_your_inputs_file/name_of_your_inputs_file.yml> --reporter=cli json:<path_to_your_output_file/name_of_your_output_file.json>
 ```
 
 ### Different Run Options
@@ -67,7 +67,7 @@ mkdir profiles
 cd profiles
 git clone https://github.com/mitre/aws-rds-microsoft-sql-server-2017-cis-baseline
 inspec archive aws-rds-microsoft-sql-server-2017-cis-baseline
-inspec exec <name of generated archive> -t winrm://<hostip> --user=<admin-account> --password=<password> --input-file=<path_to_your_inputs_file/name_of_your_inputs_file.yml> --reporter cli json:<path_to_your_output_file/name_of_your_output_file.json>
+inspec exec <name of generated archive> --input-file=<path_to_your_inputs_file/name_of_your_inputs_file.yml> --reporter cli json:<path_to_your_output_file/name_of_your_output_file.json>
 ```
 For every successive run, follow these steps to always have the latest version of this baseline:
 
@@ -76,7 +76,7 @@ cd aws-rds-microsoft-sql-server-2017-cis-baseline
 git pull
 cd ..
 inspec archive aws-rds-microsoft-sql-server-2017-cis-baseline --overwrite
-inspec exec <name of generated archive> -t winrm://<hostip> --user=<admin-account> --password=<password> --input-file=<path_to_your_inputs_file/name_of_your_inputs_file.yml> --reporter cli json:<path_to_your_output_file/name_of_your_output_file.json>
+inspec exec <name of generated archive> --input-file=<path_to_your_inputs_file/name_of_your_inputs_file.yml> --reporter cli json:<path_to_your_output_file/name_of_your_output_file.json>
 ```
 
 ## Viewing the JSON Results
