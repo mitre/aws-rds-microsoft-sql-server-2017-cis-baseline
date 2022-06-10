@@ -10,7 +10,7 @@ inspec_version: ">= 4.0"
 
 depends:
 - name: microsoft-sql-server-2017-cis-baseline
-  url: https://github.com/mitre/microsoft-sql-server-2017-cis-baseline/archive/v1.2.0.tar.gz
+  url: https://github.com/mitre/microsoft-sql-server-2017-cis-baseline/archive/main.tar.gz
 
 inputs:
   - name: user
