@@ -1,0 +1,46 @@
+name: aws-rds-microsoft-sql-server-2017-cis-baseline
+title: aws-rds-microsoft-sql-server-2017-cis-baseline
+maintainer: MITRE SAF
+copyright: MITRE SAF
+copyright_email: saf@groups.mitre.org
+license: Apache-2.0
+summary: "An InSpec Profile to validate the AWS RDS Microsoft SQL Server 2017 CIS Benchmark"
+version: 1.2.0
+inspec_version: ">= 4.0"
+
+depends:
+- name: microsoft-sql-server-2017-cis-baseline
+  url: https://github.com/mitre/microsoft-sql-server-2017-cis-baseline/archive/main.tar.gz
+
+inputs:
+  - name: user
+    description: 'The username MSSQL DB Server'
+    required: true
+    sensitive: true
+    profile: microsoft-sql-server-2017-cis-baseline
+
+  - name: password
+    description: 'The password MSSQL DB Server'
+    required: true
+    sensitive: true
+    profile: microsoft-sql-server-2017-cis-baseline
+
+  - name: host
+    description: 'The hostname MSSQL DB Server'
+    required: true
+    sensitive: true
+    profile: microsoft-sql-server-2017-cis-baseline
+
+  - name: instance
+    description: 'The instance name MSSQL DB Server'
+    required: true
+    sensitive: true
+    profile: microsoft-sql-server-2017-cis-baseline
+
+  - name: port
+    description: 'The port used for MSSQL DB Server'
+    type: numeric
+    value: 1433
+    required: true
+    sensitive: true
+    profile: microsoft-sql-server-2017-cis-baseline
